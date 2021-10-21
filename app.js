@@ -45,6 +45,10 @@ app.get('/team', (req, res) => {
     res.render('team', {title: 'Our Team'});
 });
 
+app.get('/blogs', (req, res) => {
+    res.render('blogs', {title: 'blogs'});
+});
+
 app.get('/gallery', (req, res) => {
     res.render('gallery', {title: 'Gallery'});
 });
@@ -55,10 +59,6 @@ app.get('/projects', (req, res) => {
 
 app.get('/faculty', (req, res) => {
     res.render('faculty', {title: 'Faculty'});
-});
-
-app.get('/alumni', (req, res) => {
-    res.render('alumni', {title: 'Alumni'});
 });
 
 app.get('/about', (req, res) => {

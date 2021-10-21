@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #003366;
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    padding: 0 !important;
+    margin: 0 0 30px 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Copperplate', fantasy;
+    font-weight: 400;
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+}
+
+
+/* Back to top button */
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: rgb(15, 15, 15);
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s ease;
+    z-index: 11;
+}
+
+.back-to-top i {
+    padding-top: 12px;
+    color: #fff;
+    transition: background 0.5s ease;
+}
+
+.back-to-top:hover {
+    background: rgb(61, 61, 61);
+}
+
+.back-to-top i:hover {
+    padding-top: 12px;
+    color: rgba(0, 140, 255, 1);
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+    background: rgba(4, 32, 61, 0);
+    height: 85px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 10000;
+}
+
+#header #nav-menu-container {
+    padding: 30px 10px;
+}
+
+#header.header-scrolled {
+    background: rgba(2, 10, 18, 0.658);
+    height: 80px;
+    transition: all 0.5s;
+}
+
+#header #logo {
+    float: left;
+}
+
+header #logo img {
+    width: 85px;
+    height: 85px;
+    padding: 3px;
+    margin: 0 0 0px 0;
+}
+
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+#intro {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+
+#intro .carousel-item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: visible;
+    overflow-y: hidden;
+}
+
+#intro .carousel-item::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow-x: visible;
+    overflow-y: hidden;
+}
+
+#intro .carousel-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#intro .carousel-background img {
+    max-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#intro .carousel-content {
+    text-align: center;
+    text-shadow: 0 0 15px #000000, 0 0 15px #000000;
+}
+
+#intro h1 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#intro h3 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#intro p {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    color: #fff;
+}
+
+#intro .carousel-fade {
+    overflow: hidden;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item {
+    transition-property: opacity;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item,
+#intro .carousel-fade .carousel-inner .active.carousel-item-left,
+#intro .carousel-fade .carousel-inner .active.carousel-item-right {
+    opacity: 1;
+}
+
+#intro .carousel-fade .carousel-inner .active,
+#intro .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
+#intro .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item-next,
+#intro .carousel-fade .carousel-inner .carousel-item-prev,
+#intro .carousel-fade .carousel-inner .active.carousel-item-left,
+#intro .carousel-fade .carousel-inner .active.carousel-item-right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#intro .carousel-control-prev,
+#intro .carousel-control-next {
+    width: 10%;
+}
+
+#intro .carousel-control-next-icon,
+#intro .carousel-control-prev-icon {
+    background: none;
+    font-size: 32px;
+    padding-bottom: 60px;
+    line-height: 1;
+}
+
+#intro .carousel-indicators li {
+    cursor: pointer;
+}
+
+#intro .btn-get-started {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    color: #fff;
+    background: #1f20229f;
+}
+
+#intro .btn-get-started:hover {
+    background: rgba(255, 255, 255, 0.568);
+    color: #000000;
+}
+
+/* Media Query */
+@media (min-width: 768px) {
+    #contact .contact-address,
+    #contact .contact-phone,
+    #contact .contact-email {
+        padding: 20px 0;
+    }
+    #contact .contact-phone {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+}
+
+@media (max-width:991px) {
+    #footer .footer-top {
+        padding-left: 0
+    }
+}
+
+@media (min-width: 992px) {
+    #testimonials .testimonial-item p {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #intro p {
+        width: 60%;
+    }
+    #intro .carousel-control-prev,
+    #intro .carousel-control-next {
+        width: 5%;
+    }
+    #nav-menu-container {
+        padding-right: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 15px;
+    }
+    #header #logo img {
+        width: 80px;
+        height: 80px;
+        margin: 0 0 0px 0;
+    }
+    #intro h2 {
+        font-size: 28px;
+    }
+    #nav-menu-container {
+        display: none;
+    }
+    #mobile-nav-toggle {
+        display: inline;
+    }
+}
+
+@media (max-width: 576px) {
+    #intro {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    #promote .grid2 {
+        padding-left: 125px;
+    }
+}
