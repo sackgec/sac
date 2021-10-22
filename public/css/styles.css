@@ -272,6 +272,7 @@ header #logo img {
 .float-container {
     padding-top: 50px;
     padding-bottom: 50px;
+    width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -280,7 +281,7 @@ header #logo img {
 }
 
 .who-are-we, .notice-box {
-    max-width: 600px;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,12 +289,12 @@ header #logo img {
 } 
 
 .who-are-we{
-    padding: 10px;
-    margin: 0 20px;
+    padding: 10px 5%;
 } 
 .who-are-we h2{
     font-weight: 500;
     font-size: 2.5em;
+    color: black;
 } 
 
 .who-are-we p{
@@ -302,13 +303,13 @@ header #logo img {
 } 
 
 .notice-box{
-    padding: 0 20px;
-    margin: 0 20px;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
-.fb-page{
-    width: 400px;
-}
 
 
 @media only screen and (max-width: 600px) {
@@ -316,24 +317,14 @@ header #logo img {
         padding: 5px;
         font-size: 16px;
     }
-
-    .notice-wrapper h3{
-        font-size: 20px;
-    }
-
-    .notice-wrapper{
-        margin-left:8%;
-        margin-right:8%;
-    }
-
-    .data-list {
-        height: 200px;
+    
+    .fb-page{
+        width: 300px;
+        height: 400px;
     }
 
     .who-are-we, .notice-box {
         width: 100%;
-        padding: 12px;
-        padding-left: 0;
     } 
 
     .who-are-we h2{
@@ -352,16 +343,14 @@ header #logo img {
     .notice-box h3{
         font-size: 25px;
     } 
-
+/* 
     .notice-box{
-        padding-left: 0;
-        padding: 0;
-    }
+        padding-bottom: 40px;
+    } */
 
-    .fb-page{
-        padding-left: 5px;
+    .float-container {
+        margin-bottom: 50px;
     }
-
 }
 
 /* Sections Header
