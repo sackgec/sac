@@ -19,7 +19,7 @@
     }
   });
   $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+    $('html, body').animate({scrollTop : 0},1500);
     return false;
   });
 
@@ -39,7 +39,7 @@
     var $mobile_nav = $('#nav-menu-container').clone().prop({
       id: 'mobile-nav'
     });
-    $mobile_nav.find('> ul').attr({
+    $mobile_nav.find('>ul').attr({
       'class': '',
       'id': ''
     });
@@ -204,3 +204,4 @@
   });
 
 })(jQuery);
+

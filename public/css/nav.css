@@ -29,7 +29,7 @@
     display: block;
 }
 
-.nav-menu ul ul {
+.nav-menu ul{
     top: 0;
     left: 100%;
 }
@@ -70,13 +70,13 @@
 /* Nav Menu Styling */
 
 .nav-menu a {
-    padding: 0 8px 10px 8px;
+    padding: 0 15px 10px 15px;
     text-decoration: none;
     display: inline-block;
     color: #fff;
-    font-family: Copperplate, Papyrus, fantasy;
-    font-weight: 700;
-    font-size: 14px;
+    font-family: Copperplate, fantasy;
+    font-weight: 400;
+    font-size: 22px;
     text-transform: uppercase;
     outline: none;
     transition: all 0.5s ease;
@@ -84,10 +84,6 @@
 
 .nav-menu li:hover>a {
     color: rgb(0, 247, 255);
-}
-
-.nav-menu>.menu-active>a {
-    color: #16f559;
 }
 
 .nav-menu>li {
@@ -132,15 +128,20 @@
     margin: 20px 20px 0 0;
     border: 0;
     background: none;
-    font-size: 24px;
     display: none;
+    font-size: 24px;
     transition: all 0.4s;
     outline: none;
     cursor: pointer;
 }
 
 #mobile-nav-toggle i {
-    color: #fff;
+    color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 768px) {
+    #mobile-nav-toggle {
+        display: inline-block;
+    }
 }
 
 

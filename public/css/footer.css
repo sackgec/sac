@@ -169,6 +169,7 @@
 #footer .button {
     height: 47px;
     width: 170px;
+    float: right;
 }
 
 #footer .button button {

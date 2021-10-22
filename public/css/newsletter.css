@@ -1,23 +1,42 @@
 #newsletter {
-    width: 95%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    min-height: 50px;
-    /* background-color: #35424a; */
-    color: #222;
+    min-height: 120px;
+    background-color: #262829;
+    color: rgb(255, 255, 255);
+}
+#newsletter .container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    flex-wrap: wrap;
+    padding: 2vh 0 2vh 0;
 }
 
 #newsletter h1 {
-    float: left;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 300;
     font-family: 'Copperplate', fantasy;
-    letter-spacing: 1.4;
+    letter-spacing: 1.7;
+    display: inline-block;
+    text-align: center;
+    min-width: 500px;
+    margin-bottom: 0;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 #newsletter form {
-    float: right;
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 500px;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 #newsletter input {
