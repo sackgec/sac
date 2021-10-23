@@ -1,5 +1,6 @@
 .about-intro{
-    background: url("/images/hero-image.png") no-repeat center center/cover;
+    background: rgba(0, 0, 0, .45) url('/images/hero-image.png') no-repeat center center/cover;
+    background-blend-mode: darken;
 }
 
 .about-container{

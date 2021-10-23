@@ -1,7 +1,7 @@
 .gallery-intro{
-    background: url("/images/gallery/gallery.jpg") no-repeat center center/cover;
+    background: rgba(0, 0, 0, .45) url('/images/gallery/gallery.jpg') no-repeat center center/cover;
+    background-blend-mode: darken;
 }
-
 .gallery-container {
     padding: 40px 40px;
     margin-top: 50px;
