@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+/* For smooth scrolling */
+@media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+}
+
 body {
     background: rgb(255, 255, 255);
     color: #666666;
