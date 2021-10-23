@@ -1,0 +1,168 @@
+.gallery-intro{
+    background: url("/images/gallery/gallery.jpg") no-repeat center center/cover;
+}
+
+.gallery-container {
+    padding: 40px 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-column: 3/-3;
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 25px;
+    column-gap: 5px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.image img {
+    border-radius: 5px;
+    width: 400px;
+    height: 240px;
+}
+.image {
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+}
+.image:hover {
+    border-radius: 5px;
+    box-shadow: -1px 10px 27px -1px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: -1px 10px 27px -1px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: -1px 10px 27px -1px rgba(0, 0, 0, 0.63);
+    transition: box-shadow 0.55s ease-in-out;
+    transform: scale(1.075);
+    transition: transform 0.55s ease-in-out;
+}
+.img-overlay {
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.37);
+    opacity: 0;
+}
+.img-overlay:hover {
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+.overlay-title {
+    margin: 0px 0px 0px 5px;
+    font-size: 1.5rem;
+}
+.overlay-description {
+    font-size: .9rem;
+    margin: 10px 0px 10px 5px;
+}
+  
+/*POP UP*/
+.img-window {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.87);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+}
+.img-window h2{
+    padding-top: 3vh;
+}
+.img-window img {
+    max-height: 80vh;
+    width: 75vw;
+}
+  
+/*BUTTONS*/
+  
+.img-btn-next {
+    display: block;
+    padding: 16px 20px;
+    border-radius: 4px;
+    background-color: #0000001a;
+    position: fixed;
+    top: 45vh;
+    right: 1vw;
+    z-index: 1001;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fafafa;
+}
+.img-btn-next:hover {
+    opacity: 0.8;
+    border: rgba(240, 255, 240, 0.205) 1px solid;
+}
+  
+.img-btn-prev {
+    display: block;
+    padding: 16px 20px;
+    border-radius: 4px;
+    background-color: #0000001a;
+    position: fixed;
+    top: 45vh;
+    left: 1vw;
+    z-index: 1001;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.img-btn-prev:hover {
+    opacity: 0.8;
+    border: rgba(240, 255, 240, 0.205) 1px solid;
+}
+  
+/*************************RESPONSIVENESS*********************/
+  
+.responsive-container {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+  
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    /* //Put your CSS here for 200px to 767px width devices (cover all width between 200px to 767px // */
+    .responsive-container {
+       grid-template-columns: 1fr;
+    }
+    .image img {
+        border-radius: 5px;
+        width: 250px;
+        height: 150px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* //Put your CSS here for 768px to 1024px width devices(covers all width between 768px to 1024px //    */
+    .responsive-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .image img {
+        border-radius: 5px;
+        width: 280px;
+        height: 150px;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1519px) {
+    /* //Put your CSS here for 768px to 1024px width devices(covers all width between 768px to 1024px //    */
+    .image img {
+        border-radius: 5px;
+        width: 265px;
+        height: 125px;
+    }
+  }

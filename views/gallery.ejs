@@ -2,15 +2,143 @@
 <html lang="en">
 <!-- Head -->
 <%- include('./partials/head.ejs')  %> 
+<link rel="stylesheet" href="/css/gallery.css">
 <body>
     <!-- Navbar -->
     <%- include('./partials/nav.ejs')  %> 
 
-    <div class="gallery content">
-        <h2>Gallery</h2>
+    <div class="page-intro gallery-intro">
+        <h1>Gallery</h1>
     </div>
+    <section class="gallery-container responsive-container">
+        <div class="image"><img src="/images/gallery/Thumbnails/sample1.jpg"
+                alt=""
+                id="pic1">
+
+            <div class="img-overlay">
+                <div class="overlay-title">
+                    Image Title
+                </div>
+                <p class="overlay-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
+        </div>
+        <div class="image"><img src="/images/gallery/Thumbnails/sample2.jpg"
+                alt=""
+                id="pic2">
+
+            <div class="img-overlay">
+                <div class="overlay-title">
+                    Image Title
+                </div>
+                <p class="overlay-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
+        </div>
+        <div class="image"><img src="/images/gallery/Thumbnails/sample3.jpg"
+                alt=""
+                id="pic3">
+
+            <div class="img-overlay">
+                <div class="overlay-title">
+                    Image Title
+                </div>
+                <p class="overlay-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
+        </div>
+        <div class="image"><img src="/images/gallery/Thumbnails/sample4.jpg"
+                alt=""
+                id="pic4">
+
+            <div class="img-overlay">
+                <div class="overlay-title">
+                    Image Title
+                </div>
+                <p class="overlay-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+        <div class="image"><img src="/images/gallery/Thumbnails/sample5.jpg"
+                alt=""
+                id="pic5">
+
+            <div class="img-overlay">
+                <div class="overlay-title">
+                    Image Title
+                </div>
+                <p class="overlay-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+        <div class="image"><img src="/images/gallery/Thumbnails/sample6.jpg"
+                alt=""
+                id="pic5">
+
+            <div class="img-overlay">
+                <div class="overlay-title">
+                    Image Title
+                </div>
+                <p class="overlay-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+        <div class="image"><img src="/images/gallery/Thumbnails/sample7.jpg"
+                alt=""
+                id="pic7">
+
+            <div class="img-overlay">
+                <div class="overlay-title">
+                    Image Title
+                </div>
+                <p class="overlay-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+        <div class="image"><img src="/images/gallery/Thumbnails/sample8.jpg"
+                alt=""
+                id="pic8">
+
+            <div class="img-overlay">
+                <div class="overlay-title">
+                    Image Title
+                </div>
+                <p class="overlay-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+        <div class="image"><img src="/images/gallery/Thumbnails/sample9.jpg"
+                alt=""
+                id="pic8">
+
+            <div class="img-overlay">
+                <div class="overlay-title">
+                    Image Title
+                </div>
+                <p class="overlay-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+    </div>
+
+    </section>
 
     <!-- Footer -->
     <%- include('./partials/footer.ejs')  %> 
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up "></i></a>
+
+    <script src="/js/gallery.js"></script>
 </body>
 </html>

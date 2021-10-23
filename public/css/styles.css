@@ -115,6 +115,21 @@ header #logo img {
     margin: 0 0 0px 0;
 }
 
+/* Other than Index page Intro */
+.page-intro{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-intro h1{
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 6px black, 0px 0px 6px black;
+    padding-top: 4%;
+    font-size: 4em;
+}
+
 
 /*--------------------------------------------------------------
 # Intro Section
@@ -323,10 +338,10 @@ header #logo img {
     .notice-box-1{
         display: none;
     }
+
     .notice-box-2{
         display: flex;
     }
-
 
     .who-are-we, .notice-box-1, .notice-box-2{
         width: 100%;
