@@ -42,7 +42,11 @@
 }
 
 #footer .footer-links a {
-    color: rgb(0, 0, 0)
+    color: rgb(49, 49, 49);
+}
+#footer .footer-links p {
+    color: rgb(49, 49, 49);
+    font-weight: 400;
 }
 
 #footer .footer-links a:hover {

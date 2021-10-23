@@ -27,8 +27,8 @@ a:focus {
 }
 
 p {
-    padding: 0 !important;
-    margin: 0 0 30px 0 !important;
+    padding: 0;
+    margin: 0 0 30px 0;
 }
 
 h1,
@@ -117,7 +117,7 @@ header #logo img {
 
 /* Other than Index page Intro */
 .page-intro{
-    height: 300px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,11 +125,16 @@ header #logo img {
 .page-intro h1{
     text-align: center;
     color: white;
-    text-shadow: 0px 0px 6px black, 0px 0px 6px black;
+    text-shadow: 0px 0px 6px black, 0px 0px 8px black, 0px 0px 10px black;
     padding-top: 4%;
     font-size: 4em;
 }
 
+@media only screen and (max-width: 600px) {
+    .page-intro h1{
+        font-size: 3.25em;
+    }
+}
 
 /*--------------------------------------------------------------
 # Intro Section

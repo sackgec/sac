@@ -1,0 +1,41 @@
+.about-intro{
+    background: url("/images/hero-image.png") no-repeat center center/cover;
+}
+
+.about-container{
+    width: 90%;
+    margin: 40px auto;
+}
+.about-container p{
+    font-size: 3vmin;
+    color: rgb(46, 46, 46);
+}
+.about-container h4{
+    font-size: 4vmin;
+    color: rgb(31, 31, 31);
+    font-weight: 200;
+}
+.about-container li{
+    font-size: 3vmin;
+    color: rgb(46, 46, 46);
+}
+
+@media only screen and (max-width: 600px) {
+    .about-container{
+        width: 90%;
+        margin: 40px auto;
+    }
+    .about-container p{
+        font-size: 5vmin;
+        color: rgb(46, 46, 46);
+    }
+    .about-container h4{
+        font-size: 7vmin;
+        color: rgb(31, 31, 31);
+        font-weight: 200;
+    }
+    .about-container li{
+        font-size: 5vmin;
+        color: rgb(46, 46, 46);
+    }
+}

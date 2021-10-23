@@ -32,9 +32,9 @@
     box-shadow: -1px 10px 27px -1px rgba(0, 0, 0, 0.63);
     -webkit-box-shadow: -1px 10px 27px -1px rgba(0, 0, 0, 0.63);
     -moz-box-shadow: -1px 10px 27px -1px rgba(0, 0, 0, 0.63);
-    transition: box-shadow 0.55s ease-in-out;
+    transition: box-shadow 0.4s ease-in-out;
     transform: scale(1.075);
-    transition: transform 0.55s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 .img-overlay {
     border-radius: 5px;
@@ -52,16 +52,16 @@
     opacity: 0;
 }
 .img-overlay:hover {
-    transition: opacity 0.3s;
+    transition: opacity 0.4s;
     opacity: 1;
 }
 .overlay-title {
-    margin: 0px 0px 0px 5px;
+    margin: 0px 0px 0px 14px;
     font-size: 1.5rem;
 }
 .overlay-description {
     font-size: .9rem;
-    margin: 10px 0px 10px 5px;
+    margin: 5px 0px 20px 15px;
 }
   
 /*POP UP*/
@@ -81,6 +81,7 @@
 }
 .img-window h2{
     padding-top: 3vh;
+    text-align: center;
 }
 .img-window img {
     max-height: 80vh;
