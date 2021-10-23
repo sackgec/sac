@@ -280,8 +280,7 @@ header #logo img {
     flex-wrap: wrap;
 }
 
-.who-are-we, .notice-box {
-    width: 50%;
+.who-are-we, .notice-box-1, .notice-box-2{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -290,6 +289,7 @@ header #logo img {
 
 .who-are-we{
     padding: 10px 5%;
+    width: 60%;
 } 
 .who-are-we h2{
     font-weight: 500;
@@ -302,12 +302,14 @@ header #logo img {
     font-size: 1.7em;
 } 
 
-.notice-box{
+.notice-box-1, .notice-box-2{
     text-align: center;
-    display: flex;
-    text-align: center;
-    justify-content: center;
     padding-bottom: 20px;
+    width: 40%;
+}
+
+.notice-box-2{
+    display: none;
 }
 
 
@@ -318,12 +320,15 @@ header #logo img {
         font-size: 16px;
     }
     
-    .fb-page{
-        width: 300px;
-        height: 400px;
+    .notice-box-1{
+        display: none;
+    }
+    .notice-box-2{
+        display: flex;
     }
 
-    .who-are-we, .notice-box {
+
+    .who-are-we, .notice-box-1, .notice-box-2{
         width: 100%;
     } 
 
@@ -340,13 +345,9 @@ header #logo img {
         padding-top: 0px;
     } 
 
-    .notice-box h3{
+    .notice-box-1 h3, .notice-box-2 h3{
         font-size: 25px;
     } 
-/* 
-    .notice-box{
-        padding-bottom: 40px;
-    } */
 
     .float-container {
         margin-bottom: 50px;
