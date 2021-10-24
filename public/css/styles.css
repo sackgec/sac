@@ -296,7 +296,7 @@ header #logo img {
 }
 
 /* who are we */
-.float-container {
+#float-container {
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
@@ -315,7 +315,7 @@ header #logo img {
 } 
 
 .who-are-we{
-    padding: 10px 5%;
+    padding: 20px 5%;
     width: 60%;
 } 
 .who-are-we h2{
@@ -376,7 +376,7 @@ header #logo img {
         font-size: 25px;
     } 
 
-    .float-container {
+    #float-container {
         margin-bottom: 50px;
     }
 }

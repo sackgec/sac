@@ -1,0 +1,147 @@
+.faculty-intro{
+    background: rgba(0, 0, 0, .45) url('/images/faculty/faculty.jpg') no-repeat center center/cover;
+    background-blend-mode: darken;
+}
+
+main {
+    margin-top: 5em;
+    display: grid;
+    place-items: center;
+    margin-bottom: 5em;
+}
+
+main h4{
+    font-size: 1.75rem;
+}
+.faculty-container {
+    width: 90%;
+}
+.faculty-card {
+    margin: 0px 1.2em;
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s linear;
+}
+.faculty-card a{
+    color: rgb(27, 126, 255);
+}
+  
+.faculty-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.445);
+    transform: scale(1.035);
+    transition: transform .3s ease-in-out;
+}
+  
+.img-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    z-index: 5;
+}
+.faculty-card:hover #person-img {
+    filter: brightness(0.55);
+    transition: all 0.3s ease-in-out;
+    box-shadow: none;
+}
+.faculty-card:hover #linkedIn {
+    z-index: 6;
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+}
+
+#linkedIn{
+    color: black;
+    height: 2.2rem;
+    width: 2.2rem;
+    position: absolute;
+    right: 19%;
+    bottom: 13%;
+    border-radius: 50%;
+    color: black;
+}
+
+#person-img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.445);
+}
+#person-img-no-link {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.445);
+}
+  
+#author {
+    margin-bottom: 0.25rem;
+    color: rgb(29, 29, 29);
+}
+#job {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: hsl(205, 78%, 60%);
+    font-size: 1.17rem;
+    font-weight: 500;
+}
+#info {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+/***********************RESPONSIVE*************************/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+/* //Put your CSS here for 320px to 480px width devices  */
+    .faculty-container-res {
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows: auto;
+      grid-gap: 22px;
+    }
+    #linkedIn{
+      z-index: 10;
+  }
+  }
+  @media screen and (min-width: 768px) {
+    h4 {
+      font-size: 1rem;
+    }
+    body {
+      font-size: 1rem;
+    }
+    h4 {
+      line-height: 1;
+    }
+  
+    .faculty-container-res {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 0px
+    }
+  } /*Min width of 800px*/
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* //Put your CSS here for 200px to 767px width devices (cover all width between 200px to 767px // */
+    .faculty-container-res {
+      width: 90vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+      margin: 0px;
+    }
+    .faculty-card {
+      margin: 0px 1em 1em 0px;
+    }
+}
+  
