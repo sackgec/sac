@@ -24,6 +24,7 @@ main h4{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: box-shadow 0.3s linear;
+    background: url("/images/faculty/bg.jpg") no-repeat center center/cover;
 }
 .faculty-card a{
     color: rgb(27, 126, 255);
