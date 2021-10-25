@@ -116,8 +116,8 @@ h6 {
 }
 
 header #logo img {
-    width: 87px;
-    height: 87px;
+    width: 93px;
+    height: 93px;
     padding: 3px;
     margin: 0 0 0px 0;
 }
@@ -379,6 +379,22 @@ header #logo img {
     #float-container {
         margin-bottom: 50px;
     }
+
+    /* Intro section */
+    #intro h1 {
+        margin-bottom: 30px;
+        font-size: 36px;
+        padding: 10% 10%;
+    }
+    
+    #intro h3 {
+        font-size: 17px;
+    }
+    
+    #intro p {
+        margin: 0 auto 30px auto;
+        font-size: 15px;
+    }
 }
 
 /* Sections Header
@@ -431,8 +447,7 @@ header #logo img {
 }
 
 
-/* promote
---------------------------------*/
+/*----------------------- promote --------------------------------*/
 
 #promote .grid1 {
     padding: 3vw 5vw 5vw 5vw;
@@ -524,6 +539,13 @@ header #logo img {
     font-weight: 300;
 }
 
+@media only screen and (max-width: 600px) {
+    .youtube .youtube-player {
+        height: 200px;
+        width: 100%;
+    }
+}
+
 /* Media Query */
 @media (min-width: 768px) {
     #contact .contact-address,
@@ -579,13 +601,6 @@ header #logo img {
     }
     #mobile-nav-toggle {
         display: inline;
-    }
-}
-
-@media (max-width: 576px) {
-    #intro {
-        width: 100%;
-        height: 350px;
     }
 }
 

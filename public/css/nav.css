@@ -76,14 +76,14 @@
     color: #fff;
     font-family: Copperplate, fantasy;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 24px;
     text-transform: uppercase;
     outline: none;
     transition: all 0.5s ease;
 }
 
 .nav-menu li:hover>a {
-    color: rgb(0, 247, 255);
+    color: #42aaff;
 }
 
 .nav-menu>li {
@@ -106,7 +106,7 @@
     color: #333;
     transition: 0.3s;
     display: block;
-    font-size: 13px;
+    font-size: 14px;
     text-transform: none;
 }
 
