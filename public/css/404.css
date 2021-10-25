@@ -1,0 +1,4 @@
+.not-found-intro{
+    background: rgba(0, 0, 0, .45) url('/images/404.jpg') no-repeat center center/cover;
+    background-blend-mode: darken;
+}

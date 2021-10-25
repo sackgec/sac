@@ -2,16 +2,28 @@
 <html lang="en">
 <!-- Head -->
 <%- include('./partials/head.ejs')  %> 
+<link rel="stylesheet" href="/css/404.css">
 <body>
     <!-- Navbar -->
     <%- include('./partials/nav.ejs')  %> 
 
-    <div class="not-found content">
-        <h1>404 - OOPS!</h1>
-        <h2>That page doesn't exist</h2>
+    <div class="page-intro not-found-intro">
+        <h1>404 - Page does not exist</h1>
     </div>
 
-    <!-- Footer -->
+    <!-- Newsletter -->
+    <%- include('./partials/newsletter.ejs') %>
+
+    <!-------------- Footer --------------->
+
+    <footer id="footer">
+    <!-- Contact Us Form -->
+    <%- include('./partials/contact.ejs')  %> 
+
     <%- include('./partials/footer.ejs')  %> 
+    </footer>
+
+    <!--------------- Footer Ends ----------------->
+    
 </body>
 </html>
