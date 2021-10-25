@@ -490,7 +490,6 @@ header #logo img {
 #promote .card .box {
     transition: all 0.3s ease;
     left: 50%;
-    /* position: center; */
 }
 
 #promote .card:hover .box {
@@ -521,7 +520,11 @@ header #logo img {
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
+@media only screen and (max-width: 600px) {
+    #promote .grid1 {
+        margin-bottom: 5px;
+    }
+}
 
 
 /* Youtube videos */
@@ -552,7 +555,14 @@ header #logo img {
 @media only screen and (max-width: 600px) {
     .youtube .youtube-player {
         height: 200px;
-        width: 100%;
+        width: 96%;
+    }
+    .youtube .youtube-header {
+        font-size: 32px;
+    }
+    .youtube {
+        padding-top: 15px;
+        padding-bottom: 20px;
     }
 }
 
