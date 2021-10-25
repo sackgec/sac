@@ -460,9 +460,6 @@ header #logo img {
     padding: 5vw 5vw 5vw 10vw;
 }
 
-#promote i {
-    padding-left: 35px;
-}
 
 #sank {
     font-family: 'Copperplate', fantasy;
@@ -480,10 +477,14 @@ header #logo img {
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #promote .card:hover {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 140, 255, 1) 0%, rgba(0, 140, 255, 1) 15%, rgba(34, 34, 34, 0.01) 64%, rgba(34, 34, 34, 0.01) 100%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 140, 255, 1) 0%, rgba(0, 140, 255, 1) 15%, rgba(34, 34, 34, 0.01) 10%, rgba(0, 140, 255, 1) 15%, rgba(0, 0, 0, 1) 0%);
 }
 
 #promote .card .box {
@@ -500,10 +501,19 @@ header #logo img {
     font-size: 50px;
     color: rgb(0, 140, 255);
     transition: color 0.3s ease;
+
 }
 
 #promote .card:hover i {
     color: #fff;
+}
+
+#promote .card .row {
+    padding: 6px 0;
+}
+#promote .card:hover .row {
+    color: rgb(0, 140, 255);
+    transition: all 0.3s ease;
 }
 
 #promote .card .text {
@@ -601,11 +611,5 @@ header #logo img {
     }
     #mobile-nav-toggle {
         display: inline;
-    }
-}
-
-@media (max-width: 768px) {
-    #promote .grid2 {
-        padding-left: 125px;
     }
 }
