@@ -173,7 +173,7 @@
 
 #mobile-nav ul li a {
     color: #ffffdb;
-    font-size: 23px;
+    font-size: 21px;
     text-transform: uppercase;
     overflow: hidden;
     padding: 17px 22px 0px 0px;
@@ -227,6 +227,11 @@
 }
 
 
+.fa-times:before {
+    color: red;
+    font-size: 30px;
+}
+
 /* Mobile Nav body classes*/
 
 body.mobile-nav-active {
@@ -240,3 +245,4 @@ body.mobile-nav-active #mobile-nav {
 body.mobile-nav-active #mobile-nav-toggle {
     color: #fff;
 }
+
