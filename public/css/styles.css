@@ -139,7 +139,11 @@ header #logo img {
 
 @media only screen and (max-width: 600px) {
     .page-intro h1{
-        font-size: 3.25em;
+        font-size: 3.15em;
+        padding-top: 8%;
+    }
+    .page-intro{
+        height: 270px;
     }
 }
 
@@ -334,6 +338,9 @@ header #logo img {
     padding-bottom: 20px;
     width: 40%;
 }
+.fb-page{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
 
 .notice-box-2{
     display: none;
@@ -341,7 +348,7 @@ header #logo img {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 912px) {
     .notice-container li {
         padding: 5px;
         font-size: 16px;
@@ -376,15 +383,11 @@ header #logo img {
         font-size: 25px;
     } 
 
-    #float-container {
-        margin-bottom: 50px;
-    }
-
     /* Intro section */
     #intro h1 {
-        margin-bottom: 30px;
-        font-size: 36px;
-        padding: 10% 10%;
+        margin-bottom: 20px;
+        font-size: 33px;
+        padding: 5% 5%;
     }
     
     #intro h3 {
@@ -392,8 +395,18 @@ header #logo img {
     }
     
     #intro p {
-        margin: 0 auto 30px auto;
+        margin: 0 auto 20px auto;
         font-size: 15px;
+    }
+    #introCarousel{
+        height: 75vh;
+    }
+    #intro{
+        height: 75vh;
+    }
+
+    .carousel-content{
+        margin-bottom: 20vh;
     }
 }
 
@@ -465,7 +478,6 @@ header #logo img {
     font-family: 'Copperplate', fantasy;
     font-weight: normal;
     font-size: 60px;
-    /* align-content: center; */
 }
 
 #promote .card {
@@ -498,7 +510,6 @@ header #logo img {
 
 #promote .card i {
     font-size: 50px;
-    color: rgb(0, 140, 255);
     transition: color 0.3s ease;
 
 }
@@ -603,7 +614,7 @@ header #logo img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 912px) {
     .back-to-top {
         bottom: 15px;
     }

@@ -42,11 +42,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/team', (req, res) => {
-    res.status(404).render('404', {title: 'Our Team'});
+    res.render('team', {title: 'Our Team'});
 });
 
 app.get('/blogs', (req, res) => {
-    res.status(404).render('404', {title: 'blogs'});
+    res.status(404).render('404', {title: 'Blogs'});
 });
 
 app.get('/gallery', (req, res) => {

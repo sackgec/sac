@@ -62,6 +62,20 @@
     padding: 0 0 12px 0;
 }
 
+@media only screen and (max-width: 600px) {
+    #footer .footer-top h4 {
+        font-size: 23px;
+        margin-bottom: 5px;
+    }
+
+    #footer form .field,
+    #footer form .fields .field {
+        height: 37px;
+        width: 70%;
+        margin-bottom: 12px;
+    }
+}
+
 #footer .footer-top h4::before,
 #footer .footer-top h4::after {
     content: '';
