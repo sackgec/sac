@@ -167,13 +167,13 @@
 }
 
 #mobile-nav ul li {
-    border-bottom: 1px solid #072e2d;
+    border-bottom: 1px solid #021d4e;
     position: relative;
 }
 
 #mobile-nav ul li a {
     color: #ffffdb;
-    font-size: 16px;
+    font-size: 19px;
     text-transform: uppercase;
     overflow: hidden;
     padding: 17px 22px 0px 0px;
