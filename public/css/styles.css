@@ -399,14 +399,14 @@ header #logo img {
         font-size: 15px;
     }
     #introCarousel{
-        height: 75vh;
+        height: 70vh;
     }
     #intro{
-        height: 75vh;
+        height: 70vh;
     }
 
-    .carousel-content{
-        margin-bottom: 20vh;
+    #intro .carousel-item {
+        height: 70vh;
     }
 }
 
