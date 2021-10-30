@@ -331,6 +331,7 @@ header #logo img {
 .who-are-we p{
     font-weight: 300;
     font-size: 1.7em;
+    color: rgb(58, 58, 58);
 } 
 
 .notice-box-1, .notice-box-2{
@@ -371,7 +372,7 @@ header #logo img {
     } 
 
     .who-are-we p{
-        font-size: 16px;
+        font-size: 17.5px;
         line-height: 30px;
     } 
 
@@ -552,6 +553,7 @@ header #logo img {
 .youtube .youtube-player {
     height: 400px;
     width: 800px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .youtube .youtube-header {
@@ -607,7 +609,7 @@ header #logo img {
     }
     #intro .carousel-control-prev,
     #intro .carousel-control-next {
-        width: 5%;
+        width: 10%;
     }
     #nav-menu-container {
         padding-right: 60px;
