@@ -21,6 +21,19 @@
     color: rgb(46, 46, 46);
 }
 
+#about-img-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3vh;
+}
+
+#about-img-container img{
+    height: 250px;
+    width: 450px;
+}
+
 @media only screen and (max-width: 600px) {
     .about-container{
         width: 90%;
@@ -38,5 +51,9 @@
     .about-container li{
         font-size: 5vmin;
         color: rgb(46, 46, 46);
+    }
+    #about-img-container img{
+        height: 180px;
+        width: 300px;
     }
 }
