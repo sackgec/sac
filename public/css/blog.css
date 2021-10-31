@@ -1,0 +1,47 @@
+.page-intro h1, h4{
+    color: antiquewhite;
+    text-shadow: 0 0 5px black, 0 0 7px black, 0 0 9px black;
+}
+
+.blog-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80vw;
+}
+.blog-container div{
+    text-align: center;
+}
+
+.blog-container{
+    margin: 60px auto 30px auto;
+}
+.blog-container img{
+    width: 50%;
+    margin: 15px 0;
+    box-shadow: 0 0 5px 1px black;
+}
+.blog-container ul img{
+    display: block;
+    margin: 15px auto;
+}
+.blog-container h2, .blog-container h3{
+    color: black;
+    font-size: 32px;
+}
+.blog-container h5{
+    color: rgb(65, 65, 65);
+    font-size: 26px;
+}
+.blog-container p, .blog-container li{
+    color: rgb(78, 78, 78);
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .blog-container{
+        width: 96vw;
+    }
+}

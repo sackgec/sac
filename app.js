@@ -49,12 +49,20 @@ app.get('/blogs', (req, res) => {
     res.render('blogs', {title: 'Blogs'});
 });
 
+// Single blog route
+
+app.get('/blogs/:blogName', (req, res) => {
+    var blogName = req.params.blogName; 
+    var blog_path = 'blogs/' + blogName;
+    res.render(blog_path, {title: 'Blog'});
+})
+
 app.get('/gallery', (req, res) => {
     res.render('gallery', {title: 'Gallery'});
 });
 
 app.get('/projects', (req, res) => {
-    res.status(404).render('404', {title: 'Projects'});
+    res.status(404).render('404', {title: 'Page Not Found'});
 });
 
 app.get('/faculty', (req, res) => {
