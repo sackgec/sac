@@ -46,7 +46,7 @@ app.get('/team', (req, res) => {
 });
 
 app.get('/blogs', (req, res) => {
-    res.status(404).render('404', {title: 'Blogs'});
+    res.render('blogs', {title: 'Blogs'});
 });
 
 app.get('/gallery', (req, res) => {

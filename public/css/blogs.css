@@ -1,0 +1,4 @@
+.blogs-intro{
+    background: rgba(0, 0, 0, .45) url('/images/blogs/blogs.jpg') no-repeat center center/cover;
+    background-blend-mode: darken;
+}
