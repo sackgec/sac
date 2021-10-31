@@ -143,8 +143,20 @@
     }
     .image img {
         border-radius: 5px;
-        width: 250px;
-        height: 150px;
+        width: 260px;
+        height: 160px;
+    }
+    .img-window img {
+        width: 95vw;
+        padding-bottom: 5.5vh;
+    }
+    .img-window h2{
+        font-size: 23px;
+    }
+    .gallery-container {
+        padding: 20px 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
   }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
