@@ -40,6 +40,7 @@ body {
     border-radius: calc(var(--curve) * 1px);
     overflow: hidden;
     text-decoration: none;
+    box-shadow: 0 0 5px 0px rgb(170, 170, 170);
 }
   
 .card__image {      
@@ -136,4 +137,8 @@ body {
     color: #0077B5;
     padding: 0 5%;
     cursor: pointer;
+}
+.card__description a:hover i{
+    transform: scale(1.25);
+    transition: all 0.15s ease-in-out;
 }
