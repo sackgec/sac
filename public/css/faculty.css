@@ -46,7 +46,7 @@ main h4{
     z-index: 5;
 }
 .faculty-card:hover #person-img {
-    filter: brightness(0.55);
+    filter: brightness(0.6);
     transition: all 0.3s ease-in-out;
     box-shadow: none;
 }
@@ -64,7 +64,6 @@ main h4{
     right: 19%;
     bottom: 13%;
     border-radius: 50%;
-    color: black;
 }
 
 #person-img {
@@ -85,6 +84,10 @@ main h4{
     position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.445);
 }
+.faculty-card:hover #person-img-no-link {
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
   
 #author {
     margin-bottom: 0.25rem;
@@ -92,9 +95,8 @@ main h4{
 }
 #job {
     margin-bottom: 0.5rem;
-    text-transform: uppercase;
     color: hsl(205, 78%, 60%);
-    font-size: 1.17rem;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 #info {

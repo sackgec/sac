@@ -57,13 +57,13 @@ app.get('/blogs/:blogName', (req, res) => {
     res.render(blog_path, {title: 'Blog'});
 })
 
-app.get('/gallery', (req, res) => {
-    res.render('gallery', {title: 'Gallery'});
-});
+// app.get('/gallery', (req, res) => {
+//     res.render('gallery', {title: 'Gallery'});
+// });
 
-app.get('/projects', (req, res) => {
-    res.status(404).render('404', {title: 'Page Not Found'});
-});
+// app.get('/projects', (req, res) => {
+//     res.render('projects', {title: 'Projects'});
+// });
 
 app.get('/faculty', (req, res) => {
     res.render('faculty', {title: 'Faculty'});
