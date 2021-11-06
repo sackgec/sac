@@ -400,14 +400,14 @@ header #logo img {
         font-size: 15px;
     }
     #introCarousel{
-        height: 70vh;
+        height: 64vh;
     }
     #intro{
-        height: 70vh;
+        height: 64vh;
     }
 
     #intro .carousel-item {
-        height: 70vh;
+        height: 64vh;
     }
 }
 
