@@ -50,7 +50,9 @@
     }
     .page-intro h1{
         font-size: 1.7em;
-        margin-top: 8%;
+    }
+    .page-intro h4{
+        font-size: 1.4em;
     }
     .page-intro{
         height: 270px;
