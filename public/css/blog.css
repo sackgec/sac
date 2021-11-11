@@ -1,14 +1,12 @@
-.page-intro h1, h4{
-    color: antiquewhite;
-    text-shadow: 0 0 5px black, 0 0 7px black, 0 0 9px black;
-}
-
 .blog-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 80vw;
+}
+.page-intro{
+    color: antiquewhite;
 }
 .blog-container div{
     text-align: center;
@@ -18,9 +16,9 @@
     margin: 60px auto 30px auto;
 }
 .blog-container img{
-    width: 50%;
+    width: 45%;
     margin: 15px 0;
-    box-shadow: 0 0 5px 1px black;
+    box-shadow: 0 0 4px 1px rgb(53, 53, 53);
 }
 .blog-container ul img{
     display: block;
@@ -42,6 +40,29 @@
 
 @media only screen and (max-width: 600px) {
     .blog-container{
-        width: 96vw;
+        width: 90vw;
     }
+    .blog-container img{
+        width: 75%;
+    }
+    h1{
+        font-size: 1.6em;
+    }
+    .page-intro h1{
+        font-size: 1.7em;
+        margin-top: 8%;
+    }
+    .page-intro{
+        height: 270px;
+    }
+    .blog-container h2, .blog-container h3{
+        font-size: 24px;
+    }
+    .blog-container h5{
+        font-size: 22px;
+    }
+    .blog-container p, .blog-container li{
+        font-size: 17px;
+    }
+    
 }
