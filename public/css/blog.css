@@ -19,6 +19,7 @@
     width: 45%;
     margin: 15px 0;
     box-shadow: 0 0 4px 1px rgb(53, 53, 53);
+    margin-bottom: 25px;
 }
 .blog-container ul img{
     display: block;
@@ -37,13 +38,22 @@
     font-size: 20px;
 }
 
+.dropCap::first-letter{
+    color: chartreuse;
+    font-size: 70px;
+    font-weight: 600;
+    padding-left: 12vw;
+    line-height: 10%;
+    font-family: "Rubik", Arial, sans-serif;
+}
+
 
 @media only screen and (max-width: 600px) {
     .blog-container{
         width: 90vw;
     }
     .blog-container img{
-        width: 75%;
+        width: 80%;
     }
     h1{
         font-size: 1.6em;
@@ -65,6 +75,10 @@
     }
     .blog-container p, .blog-container li{
         font-size: 17px;
+    }
+
+    .dropCap::first-letter{
+        font-size: 23px;
     }
     
 }

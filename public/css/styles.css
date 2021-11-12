@@ -329,7 +329,7 @@ header #logo img {
 } 
 
 .who-are-we p{
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.7em;
     color: rgb(58, 58, 58);
 } 
@@ -369,6 +369,7 @@ header #logo img {
 
     .who-are-we h2{
         font-size: 25px;
+        margin-bottom: 5px;
     } 
 
     .who-are-we p{
@@ -478,7 +479,10 @@ header #logo img {
 #sank {
     font-family: 'Copperplate', fantasy;
     font-weight: normal;
-    font-size: 60px;
+    font-size: 40px;
+    padding: 15px 0 5px 0;
+    color: rgb(0, 140, 255);
+    text-align: center;
 }
 
 #promote .card {
@@ -512,7 +516,6 @@ header #logo img {
 #promote .card i {
     font-size: 50px;
     transition: color 0.3s ease;
-
 }
 
 #promote .card:hover i {
@@ -535,6 +538,17 @@ header #logo img {
 @media only screen and (max-width: 600px) {
     #promote .grid1 {
         margin-bottom: 5px;
+    }
+    #promote .card i {
+        font-size: 34px !important;
+    }
+    #sank {
+        font-size: 25px;
+        padding: 15px 0 5px 0;
+    }
+    #promote .card {
+        border-radius: 6px;
+        padding: 5px 25px;
     }
 }
 
@@ -570,11 +584,11 @@ header #logo img {
         width: 96%;
     }
     .youtube .youtube-header {
-        font-size: 32px;
+        font-size: 25px;
     }
     .youtube {
-        padding-top: 15px;
-        padding-bottom: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }
 
