@@ -208,3 +208,12 @@
     color: rgba(0, 140, 255, 1);
     background: none;
 }
+
+@media only screen and (max-width: 600px) {
+    #footer .button button {
+        width: 85%;
+        height: 79%;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+}

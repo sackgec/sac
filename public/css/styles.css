@@ -122,6 +122,13 @@ header #logo img {
     margin: 0 0 0px 0;
 }
 
+@media only screen and (max-width: 600px) {
+    #header.header-scrolled {
+        height: 77px;
+    }
+}
+
+
 /* Other than Index page Intro */
 .page-intro{
     height: 350px;
