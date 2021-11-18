@@ -160,10 +160,10 @@ body {
         font-weight: 400;
     }
     .card__description i{
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
     .card__description {
-        padding: 0.3em 1em 0.3em 1em;
+        padding: 0.5em 0.8em 0.5em 0.8em;
     } 
     .card__thumb{
         display: none;
@@ -187,6 +187,11 @@ body {
         d: path("M 60 80 c 11 0 20 -3 20 -20 v 20 Z");
         display:none;
     }   
+    h2{
+        margin: 0 !important;
+        padding: 0;
+        font-size: 25px;
+    }
 }
 
 .member-container{
@@ -202,4 +207,14 @@ body {
     margin: auto;
     font-size: 1.5em;
     color: #2b2b2b;
+}
+
+@media only screen and (max-width:600px){
+    .member-container {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 2fr));
+        gap: 0.5rem;
+        margin: 2rem 9vw;
+        font-size: 12px;
+        padding: 0;
+    }
 }
