@@ -131,6 +131,7 @@ body {
     -webkit-line-clamp: 3;
     overflow: hidden;
     text-align: center;
+    z-index: 10000000000;
 }    
 
 .card__description i{
@@ -152,21 +153,39 @@ body {
         margin: 3rem 5vw;
     }
     .card__title {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     .card__status {
         font-size: 1em;
+        font-weight: 400;
     }
     .card__description i{
-        font-size: 1.8em;
+        font-size: 1.4em;
     }
+    .card__description {
+        padding: 0.3em 1em 0.3em 1em;
+    } 
     .card__thumb{
         display: none;
     }
     .card__header {
-        padding: 10px 10px 10px 15px;
-        border-radius: calc(var(--curve) * 0.5px) 0 0 0;
+        padding: 7px 7px 7px 10px;
+        border-radius: calc(var(--curve) * 0.3px) 0 0 0;
     }
+    .card {
+        height: 100%;  
+        border-radius: calc(var(--curve) * 0.3px);
+    }
+    .card__overlay {   
+        border-radius: calc(var(--curve) * 0.2px);
+    }
+    .card__header {
+        border-radius: calc(var(--curve) * 0.3px) 0 0 0;
+    }
+    .card__arc path {
+        fill: var(--surface-color);
+        d: path("M 60 80 c 11 0 20 -3 20 -20 v 20 Z");
+    }   
 }
 
 .member-container{
