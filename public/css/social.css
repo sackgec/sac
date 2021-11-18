@@ -96,7 +96,7 @@
 
 @media only screen and (max-width: 768px) {
     .social-menu {
-        top: 55vh;
+        top: 63vh;
     }
     .social-menu ul li .fab {
         font-size: 17px;

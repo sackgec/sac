@@ -37,6 +37,15 @@
     width: 450px;
 }
 
+.dropCap::first-letter{
+    color: chartreuse;
+    font-size: 70px;
+    font-weight: 600;
+    padding-left: 12vw;
+    line-height: 10%;
+    font-family: "Rubik", Arial, sans-serif;
+}
+
 @media only screen and (max-width: 600px) {
     .about-container{
         width: 90%;
@@ -57,5 +66,14 @@
     #about-img-container img{
         height: 180px;
         width: 300px;
+    }
+    #about-location{
+        font-size: 27px !important;
+    }
+    .dropCap::first-letter{
+        font-size: 30px;
+    }
+    .about-container{
+        margin: 50px auto 20px auto;
     }
 }

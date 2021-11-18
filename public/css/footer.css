@@ -74,6 +74,9 @@
         width: 70%;
         margin-bottom: 12px;
     }
+    #footer .footer-top {
+        padding: 28px 0 0 0;
+    }
 }
 
 #footer .footer-top h4::before,
