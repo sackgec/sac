@@ -3,6 +3,7 @@
 <!-- Head -->
 <%- include('./partials/head.ejs') %>
 <link rel="stylesheet" href="/css/blogs.css">
+<link rel="stylesheet" href="/css/youtube_player.css">
 <style>
 
 </style>
@@ -208,17 +209,66 @@
         </div>
     </section>
 
-    <hr>
-
     <!-- Youtube section -->
-    <br>
     <section class="youtube">
-        <p class="youtube-header" data-aos="fade-up">Inauguration Event of SAC, KGEC</p>
-        <div class="youtube-player-wrapper" data-aos="fade-up">
-            <iframe class="youtube-player" src="https://www.youtube.com/embed/0jXWLDPYNTg"></iframe>
+        <br>
+        <h3 class="youtube-header"> A Quick Glance of Our Youtube Videos </h3>
+        <div class="youtube-player-wrapper">
+
+            <div class="main-video">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/E710VYB2Yek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <hr>
+                    <h3 class="title">Anti-lock Braking System</h3>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="video-list">
+
+                <div class="vid active">
+                    <img src="/images/youtube/ABS.png" alt="https://www.youtube.com/embed/E710VYB2Yek">
+                    <p class="title">ABS</p>
+                </div>
+
+                <div class="vid">
+                    <img src="/images/youtube/oxygen_sensor.png" alt="https://www.youtube.com/embed/P0QasnKD7FQ">
+                    <p class="title">Oxygen Sensor</p>
+                </div>
+                
+                <div class="vid">
+                    <img src="/images/youtube/AWD_4WD.png" alt="https://www.youtube.com/embed/CaGtUr1CKaI">
+                    <p class="title">Difference between AWD and 4WD</p>
+                </div>
+                
+                <div class="vid">
+                    <img src="/images/youtube/MPFI.png" alt="https://www.youtube.com/embed/rAA5nP8G5g8">
+                    <p class="title">MPFI Multi Point Fuel Injection</p>
+                </div>
+
+                <div class="vid">
+                    <img src="/images/youtube/famous.png" alt="https://www.youtube.com/embed/Zb8ocIstehg">
+                    <p class="title">Famous Indian Cars from 1995 to 2020</p>
+                </div>
+
+                <div class="vid">
+                    <img src="/images/youtube/truth.png" alt="https://www.youtube.com/embed/ehY6QsUFQeQ">
+                    <p class="title">Actual Truths of the Promised Benefits of EVs</p>
+                </div>
+
+                <div class="vid">
+                    <img src="/images/youtube/turbo_charger.png" alt="https://www.youtube.com/embed/lrXNbQk4pfI">
+                    <p class="title">Turbochargers</p>
+                </div>
+
+                <div class="vid">
+                    <img src="/images/youtube/timeline.png" alt="https://www.youtube.com/embed/VzQPDDLez6Q">
+                    <p class="title">Major Milestones in Automobile Sector</p>
+                </div>
+                
+            </div>
         </div>
     </section>
-    <br>
 
     <!-- Newsletter -->
     <%- include('./partials/newsletter.ejs') %>
@@ -238,6 +288,27 @@
 
     <!-- Lets Drive Button Sound -->
     <script src="/js/index.js"></script>
+
+    <!-- Youtube player  -->
+    <script>
+        let listVideo = document.querySelectorAll('.video-list .vid');
+        let mainVideo = document.querySelector('.main-video iframe');
+        let title = document.querySelector('.main-video .title');
+
+        listVideo.forEach(video => {
+            video.onclick = () => {
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('alt');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text;
+
+                };
+            };
+        });
+    </script>
 </body>
 
 </html>

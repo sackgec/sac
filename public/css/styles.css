@@ -563,18 +563,6 @@ header #logo img {
 /* Youtube videos */
 .youtube {
     background: rgb(255, 255, 255);
-    padding-bottom: 40px;
-}
-
-.youtube .youtube-player-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.youtube .youtube-player {
-    height: 400px;
-    width: 800px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .youtube .youtube-header {
@@ -586,10 +574,6 @@ header #logo img {
 }
 
 @media only screen and (max-width: 600px) {
-    .youtube .youtube-player {
-        height: 200px;
-        width: 96%;
-    }
     .youtube .youtube-header {
         font-size: 25px;
     }
