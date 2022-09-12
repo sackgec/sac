@@ -152,6 +152,10 @@ body {
         gap: 0.75rem;
         margin: 3rem 5vw;
     }
+
+    .member-container p{
+        font-size: 1em;
+    }
     .card__title {
         font-size: 0.8em;
     }
